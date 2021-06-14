@@ -46,7 +46,7 @@ const WeatherApp = () => {
       <div className="wrap-box">
 
       <div className="weather-box">
-      <img className={icon === "01n" ? "nightime" : "weather-icon" } src={ `http://openweathermap.org/img/wn/${icon}@2x.png` } alt="weather-icon" />
+      <img className={icon === "01n" ? "nightime" : "weather-icon" } src={ `https://openweathermap.org/img/wn/${icon}@2x.png` } alt="weather-icon" />
       <p>
       <span className="header"><strong>{city}</strong></span>
         <span className="date">  {new Date().toLocaleString()}</span>
