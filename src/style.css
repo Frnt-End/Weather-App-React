@@ -38,6 +38,11 @@ img {
         font-size: 1.2em;
         color: #fff;
         border-radius: 8px;
+        text-align: center;
+}
+
+.weather-box p {
+  margin: 0;
 }
 
 .daylight {
@@ -79,14 +84,34 @@ img {
  display: block;
 }
 
+.header strong {
+  font-weight: 300;
+}
+
 .date {
-  font-size: .9em;
+  font-size: .8em;
   color: #eee;
 }
 
 .temp {
-  font-size: 1em;
+  font-size: 2.8em;
+    font-weight: 300;
   font-family: inherit;
+}
+
+.temp span {
+  font-size: .5em;
+  vertical-align:top;
+  font-family: inherit;
+  position: absolute;
+  margin-top: 2px;
+  margin-left: 3px;
+}
+
+.temp span strong {
+  font-weight: 300;
+  font-family: 'Roboto', Arial, sans-serif;
+
 }
 
 @media screen and (max-width: 600px) {

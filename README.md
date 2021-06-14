@@ -1,6 +1,6 @@
 # Current City Weather App
 
-👉 [Watch DEMO](https://Frnt-End.github.io/Current-City-Weather-App)
+👉 [Watch DEMO](https://Frnt-End.github.io/Weather-App-React)
 
 ## 📁 Project Structure
 
@@ -20,7 +20,7 @@
 To view in localhost: in the terminal, navigate to the main folder and type:
 ##### `npm start` or  `yarn start`
 
-👉 [Watch DEMO](https://Frnt-End.github.io/Current-City-Weather-App)
+👉 [Watch DEMO](https://Frnt-End.github.io/Weather-App-React)
 
 ***
 Enjoy the code exploring 😉
