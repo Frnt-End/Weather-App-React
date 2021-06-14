@@ -23,7 +23,7 @@ To view in localhost: in the terminal, navigate to the main folder and type:
 👉 [Browser view](https://github.com/Frnt-End/Current-City-Weather-App)
 
 ***
-Hope you will enjoy the code exploring 😉
+Enjoy the code exploring 😉
 ***
 
 ### License
