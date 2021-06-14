@@ -1,4 +1,4 @@
-# Current City (Berlin) Weather App
+# Current City Weather App
 
 👉 [Browser view](https://github.com/Frnt-End/Current-City-Weather-App)
 
