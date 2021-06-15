@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Weather-App-React/static/css/main.ed90692f.chunk.css",
+    "main.css": "/Weather-App-React/static/css/main.b08e224e.chunk.css",
     "main.js": "/Weather-App-React/static/js/main.f52254f6.chunk.js",
     "main.js.map": "/Weather-App-React/static/js/main.f52254f6.chunk.js.map",
     "runtime-main.js": "/Weather-App-React/static/js/runtime-main.b57c5ee3.js",
@@ -8,7 +8,7 @@
     "static/js/2.1956820c.chunk.js": "/Weather-App-React/static/js/2.1956820c.chunk.js",
     "static/js/2.1956820c.chunk.js.map": "/Weather-App-React/static/js/2.1956820c.chunk.js.map",
     "index.html": "/Weather-App-React/index.html",
-    "static/css/main.ed90692f.chunk.css.map": "/Weather-App-React/static/css/main.ed90692f.chunk.css.map",
+    "static/css/main.b08e224e.chunk.css.map": "/Weather-App-React/static/css/main.b08e224e.chunk.css.map",
     "static/js/2.1956820c.chunk.js.LICENSE.txt": "/Weather-App-React/static/js/2.1956820c.chunk.js.LICENSE.txt",
     "static/media/style.css": "/Weather-App-React/static/media/bg-paris.7abfd9ab.jpg",
     "static/media/moon.b1772046.svg": "/Weather-App-React/static/media/moon.b1772046.svg",
@@ -17,7 +17,7 @@
   "entrypoints": [
     "static/js/runtime-main.b57c5ee3.js",
     "static/js/2.1956820c.chunk.js",
-    "static/css/main.ed90692f.chunk.css",
+    "static/css/main.b08e224e.chunk.css",
     "static/js/main.f52254f6.chunk.js"
   ]
 }
