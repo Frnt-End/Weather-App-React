@@ -11,8 +11,6 @@
 #env
 .env
 
-# imgs
-/img
 
 # misc
 .DS_Store

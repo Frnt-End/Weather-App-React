@@ -1,4 +1,4 @@
-# Current City Weather App
+# Current Weather App
 
 👉 [Watch DEMO](https://Frnt-End.github.io/Weather-App-React)
 
