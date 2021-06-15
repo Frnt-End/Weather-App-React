@@ -5,7 +5,7 @@ body {
 min-height: 100vh;
 margin: 0;
 padding:0;
-background: darkblue;
+background: #00003e;
 }
 
 * {
@@ -93,6 +93,7 @@ img {
         min-height: 68vh;
         transition: .3s;
         position: relative;
+        min-width: 24vw;
 }
 
 .tabs-wrap {
