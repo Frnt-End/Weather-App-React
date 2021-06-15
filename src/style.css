@@ -2,15 +2,14 @@
 
 body {
   font-family: 'Roboto', Arial, sans-serif;
-  background: #000106 url('bg-berlin.jpg') fixed;
-  display: block;
-  background-size: cover;
-  background-repeat: no-repeat;
-  object-fit: cover;
-background-position: top center;
 min-height: 100vh;
 margin: 0;
 padding:0;
+}
+
+* {
+  transition: .3s;
+  box-sizing: border-box;
 }
 
 img {
@@ -18,9 +17,61 @@ img {
   outline: none;
 }
 
+.bg-img {
+  display: block;
+}
+
+.Berlin {
+    background: #000106 url('img/bg-berlin.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: top center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+}
+
+.Paris {
+    background: #000106 url('img/bg-paris.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: top center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+}
+
+.London {
+    background: #000106 url('img/bg-london.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: top center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+}
+
+.New {
+    background: #000106 url('img/bg-newyork.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: top center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+}
+
+.York {
+    height: 100vh;
+    width: 100vw;
+}
+
 
 .wrap-box {
-  padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,6 +90,41 @@ img {
         border-radius: 8px;
         text-align: center;
         min-height: 68vh;
+        transition: .3s;
+        position: relative;
+}
+
+.tabs-wrap {
+  position:absolute;
+  top:0;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tabs button {
+  background: transparent;
+  border-width: 2px 0 0 0;
+  border-style: solid;
+  border-color: #999;
+  color: #999;
+  cursor: pointer;
+  cursor: hand;
+  padding: 8px;
+  font-family: inherit;
+    font-size: .95em;
+}
+
+.tabs button:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
+.active-tab {
+  color: #fff !important;
+  border-color: #fff !important;
 }
 
 .weather-box p {

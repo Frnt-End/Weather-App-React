@@ -17,6 +17,33 @@ const WeatherApp = () => {
   const [city, setCity] = useState("Berlin");
   const [country, setCountry] = useState("DE");
 
+  const [tabState, setTabState] = useState(1);
+  const toggleTab = (index) => {
+    setTabState(index);
+}
+
+
+  const clickBerlin = () => {
+    setCity("Berlin");
+    setCountry("DE");
+    toggleTab(1);
+  }
+  const clickParis = () => {
+    setCity("Paris");
+    setCountry("FR");
+    toggleTab(2);
+  }
+  const clickNY = () => {
+    setCity("New York");
+    setCountry("US");
+    toggleTab(3);
+  }
+  const clickLondon = () => {
+    setCity("London");
+    setCountry("GB");
+    toggleTab(4);
+  }
+
 
 
   const getWeatherData = (city, country) => {
@@ -46,11 +73,21 @@ const WeatherApp = () => {
 
   return (
     <>
+    <div className={`bg-img ${city}`}></div>
       <div className="wrap-box">
         <div className="weather-box">
-          <p style={{ marginBottom: "30px" }}>
-          <span className="header"><strong>{city}</strong></span>
-            <span className="date">  {new Date().toLocaleString()}</span>
+        <div className="tabs-wrap">
+            <div className="tabs">
+              <button className={tabState === 1 ? "tabs button active-tab" : "tabs button"} onClick={clickBerlin}>Berlin</button>
+              <button className={tabState === 2 ? "tabs button active-tab" : "tabs button"} onClick={clickParis}>Paris</button>
+              <button className={tabState === 3 ? "tabs button active-tab" : "tabs button"} onClick={clickNY}>New York</button>
+              <button className={tabState === 4 ? "tabs button active-tab" : "tabs button"} onClick={clickLondon}>London</button>
+            </div>
+          </div>
+
+            <p style={{ marginBottom: "30px" }}>
+              <span className="header"><strong>{city}</strong></span>
+              <span className="date">  {new Date().toLocaleString()}</span>
             </p>
 
         <div>

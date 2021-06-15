@@ -1,11 +1,14 @@
 # Current Weather App
 
+Toggle between **Berlin, Paris, New York & London** tabs to display updated current weather and background.
+
 👉 [Watch DEMO](https://Frnt-End.github.io/Weather-App-React)
 
 ## 📁 Project Structure
 
 * **index.js** is the main component.
 * **style.css** is the main style file.
+* Dedicated **img** folder.
 
 
 ## ✏️ Notes
