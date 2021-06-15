@@ -5,6 +5,7 @@ body {
 min-height: 100vh;
 margin: 0;
 padding:0;
+background: darkblue;
 }
 
 * {
@@ -22,7 +23,7 @@ img {
 }
 
 .Berlin {
-    background: #000106 url('img/bg-berlin.jpg');
+    background: url('img/bg-berlin.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     object-fit: cover;
@@ -33,7 +34,7 @@ img {
 }
 
 .Paris {
-    background: #000106 url('img/bg-paris.jpg');
+    background: url('img/bg-paris.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     object-fit: cover;
@@ -44,7 +45,7 @@ img {
 }
 
 .London {
-    background: #000106 url('img/bg-london.jpg');
+    background: url('img/bg-london.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     object-fit: cover;
@@ -55,7 +56,7 @@ img {
 }
 
 .New {
-    background: #000106 url('img/bg-newyork.jpg');
+    background: url('img/bg-newyork.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     object-fit: cover;
@@ -114,7 +115,7 @@ img {
   cursor: hand;
   padding: 8px;
   font-family: inherit;
-    font-size: .95em;
+    font-size: .8em;
 }
 
 .tabs button:hover {
