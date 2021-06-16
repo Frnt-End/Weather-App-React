@@ -15,53 +15,26 @@ const WeatherApp = () => {
   const [desc, setDesc] = useState("");
   const [icon, setIcon] = useState("01d");
   const [city, setCity] = useState("Berlin");
-  const [country, setCountry] = useState("DE");
 
-  const [tabState, setTabState] = useState(1);
+  const [tabState, setTabState] = useState(0);
   const toggleTab = (index) => {
     setTabState(index);
 }
 
-
-  const clickBerlin = () => {
-    setCity("Berlin");
-    setCountry("DE");
-    toggleTab(1);
-  }
-  const clickParis = () => {
-    setCity("Paris");
-    setCountry("FR");
-    toggleTab(2);
-  }
-  const clickNY = () => {
-    setCity("New York");
-    setCountry("US");
-    toggleTab(3);
-  }
-  const clickLondon = () => {
-    setCity("London");
-    setCountry("GB");
-    toggleTab(4);
-  }
+ const arrTabs = ["Berlin", "Paris", "New York", "London"];
 
 
 
-  const getWeatherData = (city, country) => {
+  const getWeatherData = (city) => {
     axios({
       method: "GET",
-      url:  `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&APPID=${apikey}`,
+      url:  `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&APPID=${apikey}`,
     })
       .then((response) => {
-        // console.log(response.data);
-        setIcon(response.data.weather[0].icon);
-        //setIcon("04n");
-        // Kelvin to Fahrenheit
-        // setTemperature((response.data.main.temp - 273.15) * 1.8 + 32);
-        // Kelvin to Celsius
-        setTemperature(Math.round((response.data.main.temp - 273.15) * 100) / 100);
-        setDesc(response.data.weather[0].main);
         setCity(response.data.name);
-        setCountry(response.data.sys.country);
+        setIcon(response.data.weather[0].icon);
+        setTemperature(response.data.main.temp);
+        setDesc(response.data.weather[0].main);
       })
       .catch((error) => {
         console.log(error);
@@ -78,10 +51,15 @@ const WeatherApp = () => {
         <div className="weather-box">
         <div className="tabs-wrap">
             <div className="tabs">
-              <button className={tabState === 1 ? "tabs button active-tab" : "tabs button"} onClick={clickBerlin}>Berlin</button>
-              <button className={tabState === 2 ? "tabs button active-tab" : "tabs button"} onClick={clickParis}>Paris</button>
-              <button className={tabState === 3 ? "tabs button active-tab" : "tabs button"} onClick={clickNY}>New York</button>
-              <button className={tabState === 4 ? "tabs button active-tab" : "tabs button"} onClick={clickLondon}>London</button>
+            {arrTabs.map((e,i) => {
+              return  <button key={i}
+              className={tabState === i ? "tabs button active-tab" : "tabs button"}
+              onClick={() => {
+                setCity(e); toggleTab(i)
+              }}>
+              {e}</button>
+            })}
+
             </div>
           </div>
 
@@ -115,7 +93,7 @@ const WeatherApp = () => {
         </div>
 
 </div>
-{ getWeatherData(city, country) }
+{ getWeatherData(city) }
 
     </>
   );

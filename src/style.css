@@ -110,8 +110,8 @@ img {
   background: transparent;
   border-width: 2px 0 0 0;
   border-style: solid;
-  border-color: #999;
-  color: #999;
+  border-color: #aaa;
+  color: #aaa;
   cursor: pointer;
   cursor: hand;
   padding: 8px;
@@ -211,6 +211,9 @@ font-weight: 300;
     font-size: 90%;
     padding: 0;
     width: 80vw;
+  }
+  .tabs button {
+    font-size: .95em;
   }
 }
 
