@@ -5,10 +5,7 @@ import nightIcon from './img/moon.svg';
 import dayIcon from './img/sun.svg';
 import './style.css';
 
-
-
 const apikey = process.env.REACT_APP_API_KEY;
-
 
 const WeatherApp = () => {
   const [temperature, setTemperature] = useState("");
@@ -24,15 +21,14 @@ const WeatherApp = () => {
  const arrTabs = ["Berlin", "Paris", "New York", "London"];
 
 
-
   const getWeatherData = (city) => {
     axios({
       method: "GET",
       url:  `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&APPID=${apikey}`,
     })
       .then((response) => {
-        setCity(response.data.name);
-        setIcon(response.data.weather[0].icon);
+        // setCity(response.data.name);
+        // setIcon(response.data.weather[0].icon);
         setTemperature(response.data.main.temp);
         setDesc(response.data.weather[0].main);
       })
