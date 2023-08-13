@@ -2,10 +2,10 @@
 
 body {
   font-family: 'Roboto', Arial, sans-serif;
-min-height: 100vh;
-margin: 0;
-padding:0;
-background: #00003e;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: #00003e;
 }
 
 * {
@@ -23,82 +23,83 @@ img {
 }
 
 .Berlin {
-    background: url('img/bg-berlin.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    background-position: top center;
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
+  background: url('img/bg-berlin.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-position: top center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
 }
 
 .Paris {
-    background: url('img/bg-paris.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    background-position: top center;
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
+  background: url('img/bg-paris.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-position: top center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
 }
 
 .London {
-    background: url('img/bg-london.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    background-position: top center;
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
+  background: url('img/bg-london.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-position: top center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
 }
 
 .New {
-    background: url('img/bg-newyork.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    background-position: top center;
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
+  background: url('img/bg-newyork.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-position: top center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
 }
 
 .York {
-    height: 100vh;
-    width: 100vw;
+  height: 100vh;
+  width: 100vw;
 }
 
 
 .wrap-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .weather-box {
-        margin: 5% auto;
-        padding: 0 80px;
-        background-color: rgba(0,0,0,.55);
-        box-shadow: 0 0 10px rgba(0,0,0,.2);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        color: #fff;
-        border-radius: 8px;
-        text-align: center;
-        min-height: 68vh;
-        transition: .3s;
-        position: relative;
-        min-width: 24vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+
+  margin: 5% auto;
+  padding: 0 0 80px 0;
+  background-color: rgba(0, 0, 0, .55);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+
+  color: #fff;
+  border-radius: 8px;
+  text-align: center;
+  min-height: 68vh;
+  transition: .3s;
+  position: relative;
+  min-width: 24vw;
 }
 
 .tabs-wrap {
-  position:absolute;
-  top:0;
+  margin-bottom: 10px;
 }
 
 .tabs {
@@ -116,7 +117,7 @@ img {
   cursor: hand;
   padding: 8px;
   font-family: inherit;
-    font-size: .8em;
+  font-size: .8em;
 }
 
 .tabs button:hover {
@@ -136,18 +137,18 @@ img {
 .day-time {
   /* background-image: url('sun.svg'); */
   background-size: 65px;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   width: 65px;
   height: 65px;
   display: block;
   margin: 0 auto 10px auto;
-  filter:invert();
+  filter: invert();
 }
 
 .night-time {
   /* background: transparent url('moon.svg'); */
   background-size: 55px;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   width: 55px;
   height: 55px;
   display: block;
@@ -159,7 +160,7 @@ img {
   border: none;
   outline: none;
   background-size: 80px;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   width: 80px;
   height: 80px;
   display: block;
@@ -168,7 +169,7 @@ img {
 
 .header {
   font-size: 1.8em;
- display: block;
+  display: block;
 }
 
 .header strong {
@@ -182,13 +183,13 @@ img {
 
 .temp {
   font-size: 3.8em;
-    font-weight: 200;
+  font-weight: 200;
   font-family: inherit;
 }
 
 .temp span {
   font-size: .5em;
-  vertical-align:top;
+  vertical-align: top;
   font-family: inherit;
   position: absolute;
   margin-top: 2px;
@@ -202,23 +203,24 @@ img {
 
 .desc {
   font-size: 1.5em;
-font-weight: 300;
+  font-weight: 300;
 }
 
 @media screen and (max-width: 600px) {
-  .weather-box  {
+  .weather-box {
     height: 65vh;
     font-size: 90%;
     padding: 0;
     width: 80vw;
   }
+
   .tabs button {
     font-size: .95em;
   }
 }
 
 @media screen and (min-width: 1400px) {
-  .weather-box  {
+  .weather-box {
     min-height: 45vh;
     font-size: 120%;
     max-width: 40vw;
