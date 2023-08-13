@@ -40,28 +40,27 @@ const WeatherApp = () => {
     <>
       <div className={`bg-img ${city}`}></div>
       <div className="wrap-box">
-        <div className="tabs-wrap">
-          <div className="tabs">
-            {arrTabs.map((e, i) => {
-              return (
-                <button
-                  key={i}
-                  className={
-                    tabState === i ? "tabs button active-tab" : "tabs button"
-                  }
-                  onClick={() => {
-                    setCity(e);
-                    toggleTab(i);
-                  }}
-                >
-                  {e}
-                </button>
-              );
-            })}
-          </div>
-        </div>
-
         <div className="weather-box">
+          <div className="tabs-wrap">
+            <div className="tabs">
+              {arrTabs.map((e, i) => {
+                return (
+                  <button
+                    key={i}
+                    className={
+                      tabState === i ? "tabs button active-tab" : "tabs button"
+                    }
+                    onClick={() => {
+                      setCity(e);
+                      toggleTab(i);
+                    }}
+                  >
+                    {e}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
           <p style={{ marginBottom: "30px" }}>
             <span className="header">
               <strong>{city}</strong>
