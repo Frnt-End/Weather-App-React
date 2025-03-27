@@ -1,5 +1,7 @@
 # Current Weather App
 
+![Weather Indicator](src/img/preview,jpg "Weather Indicator")
+
 Toggle between **Berlin, Paris, New York & London** tabs to display updated current weather and background.
 
 👉 [Watch DEMO](https://Frnt-End.github.io/Weather-App-React)
