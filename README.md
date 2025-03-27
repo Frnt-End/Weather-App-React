@@ -1,6 +1,6 @@
 # Current Weather App
 
-![Weather Indicator](src/img/preview,jpg "Weather Indicator")
+![Weather Indicator](src/img/preview.jpg "Weather Indicator")
 
 Toggle between **Berlin, Paris, New York & London** tabs to display updated current weather and background.
 
